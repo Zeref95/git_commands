@@ -1,29 +1,46 @@
 # git_commands
 
+## Справка
+```
 git КОМАНДА --help
+```
 
+## Основные настройки, перед началом работы
+```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+```
 
-git
-git clone URL 
-    (PATH)
+## Начало работы
+Клонирование существующего репозитория
+```
+git clone URL (PATH)
+```
+Или создание нового
+```
 git init
+```
+Подтянуть изменения
+```
+git pull
+```
 
-git status
-git log
-
+## После добавления изменений
+```
 git add (PATH)
     --all
-
+```
+```
 git commit (flags) "COMMENT"
     -m
-
+```
+```
 git push
     ветка (orign master)
+```
 
-git pull
-
+## Ветки
+```
 git branch (NAME_BRANCH)            //создать ветку
 git checkout (flags) (NAME_BRANCH)  //перейти на ветку
     -b -сразу создать ветку
@@ -35,3 +52,10 @@ git rebase (NAME_BRANCH `в которую засунуть текущую`)  //
 ^ - перемещение на 1 коммит назад
 ^^ - на 2 коммита
 ~<число> - перемещение на несколько коммитов назад
+```
+
+## Вспомогательные команды
+```
+git status
+git log (выйти - нажми q (обязательно на английской раскладке))
+```
